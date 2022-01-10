@@ -1,0 +1,2 @@
+*.extention[[:space:]]of[[:space:]]file[[:space:]]like[[:space:]].txt filter=lfs diff=lfs merge=lfs -text
+.sql filter=lfs diff=lfs merge=lfs -text
