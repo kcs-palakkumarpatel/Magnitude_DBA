@@ -1,0 +1,20 @@
+﻿CREATE PROC [dbo].[PB_Proc_UpdateDimensionsAustro]
+AS
+BEGIN
+	execute sp_executesql [PB_Proc_Fact_AustroMachineCaptured]
+	execute sp_executesql [PB_Proc_Fact_AustroMachineFeedback]
+	execute sp_executesql [PB_Proc_Fact_AustroConsumableCaptured]
+	execute sp_executesql [PB_Proc_Fact_AustroConsumableFeedback]
+	execute sp_executesql [PB_Proc_Fact_AustroEquipmentTelesalesCaptured]
+	execute sp_executesql [PB_Proc_Fact_AustroEquipmentTelesalesFeedback]
+	execute sp_executesql [PB_Proc_Fact_AustroConsumableTelesalesCaptured]
+	execute sp_executesql [PB_Proc_Fact_AustroConsumableTelesalesFeedback]
+	execute sp_executesql [PB_Proc_Fact_AustroEquipmentOpportunity]
+	execute sp_executesql [PB_Proc_Fact_AustroConsumableOpportunity]
+	execute sp_executesql [PB_Proc_Fact_AustroDailyPlanCapturedNew]
+	execute sp_executesql [PB_Proc_Fact_AustroDailyPlanFeedbackNew]
+	execute sp_executesql [PB_Proc_Fact_AustroOpportunitySummary]
+	execute sp_executesql [PB_Proc_Fact_AustroOtherLeads]
+	execute sp_executesql [PB_Proc_Fact_Austro_Complaint]
+	execute sp_executesql [PB_Proc_Austro_Fact_Captured]
+END

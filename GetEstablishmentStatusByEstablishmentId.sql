@@ -1,0 +1,1 @@
+﻿CREATE PROCEDURE [dbo].[GetEstablishmentStatusByEstablishmentId]	@EstablishmentId bigintASSET NOCOUNT ONSELECT [Id], 	[EstablishmentId], 	[StatusName], 	[StatusIconImageId], 	[DefaultStartStatus], 	[DefaultEndStatus], 	[IsActive]FROM EstablishmentStatusWHERE EstablishmentId = @EstablishmentId AND ISDeleted = 0SET NOCOUNT OFF

@@ -1,0 +1,1 @@
+﻿CREATE PROCEDURE [dbo].[GetContactRole]ASSET NOCOUNT ONSELECT [Id], 	[RoleName], 	[Descriptions], 	[GroupId], 	[CreatedOn], 	[CreatedBy], 	[UpdatedOn], 	[UpdatedBy], 	[DeletedOn], 	[DeletedBy], 	[IsDeleted]FROM ContactRole

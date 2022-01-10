@@ -1,0 +1,1 @@
+﻿CREATE PROC [dbo].[GetContactRoleActivityByContactRoleId]	@Id bigintASSET NOCOUNT ONSELECT [Id], 	[ContactRoleId], 	[ActivityId]FROM ContactRoleActivityWHERE [ContactRoleId] = @IdSET NOCOUNT OFF

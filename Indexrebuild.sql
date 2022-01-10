@@ -1,0 +1,22 @@
+﻿CREATE PROCEDURE dbo.Indexrebuild 
+
+AS
+
+BEGIN
+
+ALTER INDEX ALL ON ContactDetails REBUILD
+
+ALTER INDEX ALL ON PendingNotification REBUILD
+
+ALTER INDEX ALL ON PendingNotificationWeb REBUILD
+
+ALTER INDEX ALL ON SeenClientAnswers REBUILD
+
+ALTER INDEX ALL ON PendingEmail REBUILD
+
+ALTER INDEX ALL ON AnswerMaster REBUILD
+
+
+End
+
+

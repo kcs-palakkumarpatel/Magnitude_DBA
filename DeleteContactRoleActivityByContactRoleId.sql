@@ -1,0 +1,1 @@
+﻿CREATE PROC [dbo].[DeleteContactRoleActivityByContactRoleId]	@Id bigintASSET NOCOUNT ONDELETE FROM ContactRoleActivityWHERE [ContactRoleId] = @IdSET NOCOUNT OFF

@@ -1,0 +1,32 @@
+﻿
+CREATE PROCEDURE DropDuplicateIndexLiveDB
+
+AS
+
+BEGIN
+
+DROP index indx2 on AnswerMaster
+Drop index Ix_AnswerMaster_IsDel on AnswerMaster
+Drop index nci_wi_AnswerMaster_0E4094D4C7068F3CD50F3B50F3E28C1A on AnswerMaster
+Drop index nci_wi_AnswerMaster_18A25DF78D565AE72C6120BE12ACEA0D on AnswerMaster
+Drop index nci_wi_Answers_EAFD6B578B5C90398E946E9FC0780F99 on Answers
+Drop index index_1 on AppManagerUserRights
+Drop index Ix_AppUserEstablishment_AppUserId on AppUserEstablishment
+Drop index Ix_Contact_IsDeleted on ContactQuestions
+Drop index index_4 on Establishment
+Drop index Ix_Establishment_IsDel on Establishment
+Drop index Ix_Options_QID on Options
+Drop index Ix_Options_QID_IsDel_Wght on Options
+Drop index nci_wi_PendingNotificationWeb_1944D121F519CB12E09C3014093EF5D4 on PendingNotificationWeb
+Drop index idx_1 on SeenClientAnswers
+Drop index Ix_SeenClientAnswers_QTYID on SeenClientAnswers
+Drop index Ix_SeenClientAnswers_SCAMID_IsDel on SeenClientAnswers
+Drop index nci_wi_SeenClientAnswers_1972C54B60E3270AA35BC0F48084D27A on SeenClientAnswers
+Drop index SeenClientAnswersindx1 on SeenClientAnswers
+Drop index Ix_SeenClientOptions_QUID on SeenClientOptions
+Drop index Ix_SeenClientQuestions_DIG on SeenClientQuestions
+Drop index Ix_SeenClientQuestions_IsDel on SeenClientQuestions
+Drop index Ix_tblContact_ContactAllName on tblContact
+
+
+END
