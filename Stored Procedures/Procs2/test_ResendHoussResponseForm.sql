@@ -9,6 +9,7 @@ alter PROCEDURE [dbo].[ResendHoussResponseForm]
     @ReportId BIGINT
 AS 
     BEGIN
+	SET NOCOUNT ON;
    DECLARE  @NewAppUserId BIGINT, @AMID BIGINT, @NewAMID BIGINT;
 
    SET @NewAppUserId = (Select AppUserId from SeenClientAnswerMaster where Id = @ReportID);
@@ -17,4 +18,5 @@ SET @NewAMID = (Select top 1 ID from SeenClientAnswerMaster where SeenClientAnsw
 Update AnswerMaster set EstablishmentId = 28412 where SeenClientAnswerMasterId = @NewAMID;
 SET @AMID = (Select ID from AnswerMaster where SeenClientAnswerMasterId = @NewAMID)
 EXEC dbo.AdditionalRegisterFeedBackEmailSMS @AMID, 2974, 28412, @NewAppUserId
+SET NOCOUNT OFF;
     END
