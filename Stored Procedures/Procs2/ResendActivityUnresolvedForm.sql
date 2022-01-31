@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE dbo.ResendActivityUnresolvedForm
+﻿ALTER PROCEDURE dbo.ResendActivityUnresolvedForm
     -- Add the parameters for the stored procedure here
     @ActivityId BIGINT,
     @AppUserId BIGINT
