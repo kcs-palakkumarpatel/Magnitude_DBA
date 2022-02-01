@@ -15,6 +15,7 @@ CREATE PROCEDURE dbo.SearchDraftedFormsDataWeb_101120
     @ToDate DATETIME = NULL
 AS
 BEGIN
+SET NOCOUNT ON;
 	SELECT  ISNULL(SAM.Id, 0) AS Id,
 		ISNULL(ES.EstablishmentGroupId, 0) AS ActivityId,
 		ISNULL(SAM.EstablishmentId, 0) AS EstablishmentId,
@@ -52,4 +53,6 @@ BEGIN
             OR REPLACE(dbo.AnswerDetails('SeenClientAnswers', SAM.Id), '\n', '') LIKE '%' + @Search + '%'
         )
      ORDER BY SAM.CreatedOn DESC;
+	 
+SET NOCOUNT OFF;
 END;
